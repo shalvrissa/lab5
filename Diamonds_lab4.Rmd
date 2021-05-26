@@ -1,0 +1,23 @@
+---
+title: "Diamonds_lab4"
+author: "Sha Lu"
+date: "5/24/2021"
+output: pdf_document
+---
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+```
+
+```{r}
+diamonds %>% 
+  ggplot(aes(x=carat, y=price))+
+  geom_point(color="orange")+
+  scale_x_log10()+
+  scale_y_log10()
+ 
+
+
+```
+
